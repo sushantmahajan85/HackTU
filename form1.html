@@ -1,0 +1,243 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link rel="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+     -->
+    
+        <title>HealthFirst</title>
+        
+        
+        <style type="text/CSS">
+        body{
+        background-size:100% 100%;
+        background-image: linear-gradient(to right,red,purple)
+        }
+        
+        
+        input[type=text], select {
+      width: 350px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+     
+    form{
+       padding-left:70px;
+       padding-top:30px;
+       width:450px;
+       margin-left:540px;
+       background-color:beige;
+       color:black;
+       margin-top:20px;
+       /* background-image: linear-gradient(to right,yellow,orange); */
+      
+       
+       }
+     #form-instructions{
+         /* background-image: linear-gradient(to right,red,blue); */
+         text-align:center;
+         align-content: center;
+         -webkit-text-fill-color: white;
+         font-family:sans-serif;
+         border:2px solid grey;
+         padding-bottom:20px;
+     
+     
+     }
+     .punjab-logo{
+     float:left;
+     padding-top:20px;
+     padding-left:20px;
+     }
+        
+        
+        
+        </style>
+    </head>
+    
+    
+    <body>
+    <div id="logos">
+    <img class="punjab-logo" src="formimg.jpg" width="150px" height="150px">
+    <img class="punjab-logo" src="seal.jpg" width="150px" height="150px">
+    </div>
+    <div id="form-instructions">
+    
+    <h3>Instructions:</h3>
+    1.To be filled by the primary informant<br>
+    2.two copies should be filled incase of CBCDR(one to be submitted to ANM and one handed over to the family).<br>
+    3.For FBCDR only one copy needs to be filled and handed over to FNO.<br>
+    4.If the notification card is already filled,address the bereavement issues,offer support and leave(CBCDR only).<br>
+    5.Write in capital letters.<br>
+    6.Circle the appropriate response (or) place a (tick) wherever applicable.<br>
+    
+    </div>
+    <form id="mainform">
+    Patient name<br>
+    <input type="text" name="Patient"><br><br>
+    Patient's address<br>
+    <input type="text" name="address"><br><br>
+    Mother's name<br>
+    <input type="text" name="mother"><br><br>
+    Father's name<br>
+    <input type="text" name="father"><br><br>
+    House number<br>
+    <input type="text" name="house"><br><br>
+    Village/Town/City<br>
+    <input type="text" name="village"><br><br>
+    Place<br>
+    <input type="text" name="place"><br><br>
+    Mobile<br>
+    <input type="text" name="mobile"><br><br>
+    Time<br>
+    <input type="text" name="time"><br><br>
+    Doctor<br>
+    <input type="text" name="doctor"><br><br>
+    District/tehsil<br>
+    <input type="text" name="district"><br><br>
+    State<br>
+    <input type="text" name="state"><br><br>
+    Name of Informant<br>
+    <input type="text" name="informant"><br><br>
+    Patient's date of birth<br>
+    
+    
+      <input type="date" name="dob">
+      <br><br>
+    Patient's date of death<br>
+    
+    
+      <input type="date" name="dod">
+      
+    
+    
+    <div class="form-check" style="padding-top:2rem">
+      Sex:
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios1">
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Female
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Others
+      </label>
+    
+    
+    </div>
+
+    <div class="form-check" style="padding-top:2rem">
+      Age Group:
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="cat" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios1">
+        0-1 month
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="cat" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        1-12 months
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="cat" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        1-5 yrs
+      </label>
+    
+    
+    </div>
+
+    <div class="form-check" style="padding-top:2rem">
+      Probable Cause Of Death:
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios1">
+        Malaria
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Dengue
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Diarrhoea
+      </label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Pneumonia
+        </label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Meningitis
+          </label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Measles
+            </label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Injury
+              </label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  No identifiable cause
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="cause" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Other
+                  </label>
+    
+    
+    </div>
+    <button id="submit" onclick="count()">Submit</button>
+       
+    
+    </div></form>
+
+    <button class="btns" onclick="logOut()">LOG OUT</button>
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCb9SZVvPl_orf7_HOdkvzs00w7heNrtr4",
+      authDomain: "hacktu-9b958.firebaseapp.com",
+      databaseURL: "https://hacktu-9b958.firebaseio.com",
+      projectId: "hacktu-9b958",
+      storageBucket: "hacktu-9b958.appspot.com",
+      messagingSenderId: "939072124997",
+      appId: "1:939072124997:web:ee4c452d2cc8de4f860b2c"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+<script src="app.js"></script>
+</body></html>
