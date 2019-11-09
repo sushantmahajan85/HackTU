@@ -12,26 +12,17 @@ const form = document.querySelector('#mainform');
 form.addEventListener('submit',(e)=>{
 
 e.preventDefault();
-db.collection('form').add({
+db.collection('cafes').add({
 
-childsfathersname:form.father.value,
-dob:form.dob.value,
-dod:form.dod.value,
-gender:form.gender.value,
-state:form.state.value,
-doctor:form.doctor.value,
-district:form.district.value,
-place:form.place.value,
-time:form.time.value,
-village:form.village.value,
-nameofinformant:form.informant.value,
-nameofpatient:form.Patient.value,
-childsmothersname:form.mother.value,
-mobile:form.mobile.value,
-house:form.house.value,
-address:form.address.value,
-cause:form.cause.value,
-cat:form.cat.value
+    fname: form.fname.value,
+    lname: form.lname.value,
+    email: form.email.value,
+    add: form.add.value,
+    title: form.title.value,
+    desc: form.desc.value,
+    tdesc: form.tdesc.value,
+    skill: form.skill.value,
+    more: form.more.value
 
 
 })
